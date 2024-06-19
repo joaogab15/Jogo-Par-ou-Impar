@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par ou Ímpar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!--Esta parte guarda os containers que ficam os avatares dos jogadores, contendo as imagens personalizadas para cada um-->
+    <div class="container">
+        <h1>Par ou Ímpar</h1>
+        <div id="avatar-container">
+            <img id="player-avatar" class="avatar" src="14194218-icone-de-avatar-humano-distintivo-de-uma-pessoa-simbolo-de-perfil-de-midia-social-o-simbolo-de-uma-pessoa-vetor.jpg" alt="Avatar do jogador">
+            <img id="robot-avatar" class="avatar" src="1149386.png" alt="Avatar do robô">
+        </div>
+        <!--Aqui fica o botão que inicia o jogo-->
+        <button id="start-button">Iniciar Jogo</button>
+        <!--Aqui fica os comandos de cada botão, com identificação, valor e a função-->
+        <div id="form-container" style="display:none;">
+            <p>Escolha par ou ímpar e um número entre 0 e 5:</p>
+            <input type="radio" id="par" name="choice" value="par" checked>
+            <label for="par">Par</label>
+            <input type="radio" id="impar" name="choice" value="impar">
+            <label for="impar">Ímpar</label><br><br>
+            <input type="number" id="player-number" min="0" max="5">
+            <button id="play-button">Jogar</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
